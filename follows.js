@@ -148,9 +148,9 @@
 										element: document.querySelector('#graph-' + feedId + '-' + datastream.id),
 										width: 600,
 										height: 200,
-										renderer: 'area',
-										min: parseFloat(datastream.min_value), //- .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
-										max: parseFloat(datastream.max_value), //+ .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
+										renderer: 'line',
+										min: 0, //parseFloat(datastream.min_value) - .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
+										max: 30, //parseFloat(datastream.max_value) + .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
 										padding: {
 											top: 0.02,
 											right: 0.02,
